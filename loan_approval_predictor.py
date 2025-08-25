@@ -6,7 +6,7 @@ app= Flask(__name__)
 
 @app.route(rule="/ping",methods=["GET"])
 def pinger():
-    return {'message': 'Everything is working!'}
+    return {'message': 'Naveen is working!'}
 
 
 @app.route(rule="/predict", methods=["POST"])

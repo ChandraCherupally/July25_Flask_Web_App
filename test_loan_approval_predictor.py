@@ -8,7 +8,7 @@ def client():
 def test_ping(client):
     resp = client.get('/ping')
     assert resp.status_code == 200
-    assert resp.get_json() == {'message': 'Everything is working!'}
+    assert resp.get_json() == {'message': 'Naveen is working!'}
     
 def test_prediction_approved(client):
     test_data = {
